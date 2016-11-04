@@ -53,9 +53,9 @@ public class Connect {
 //            更新文档
 //            collection.updateMany(Filters.eq("name","liuyang"),new Document("$set",new Document("name","lalala")));
 
-            //删除符合条件的第一个文档
+//            删除符合条件的第一个文档
             collection.deleteOne(Filters.eq("name", "lala"));
-            //删除所有符合条件的文档
+//            删除所有符合条件的文档
             collection.deleteMany (Filters.eq("name", "ad"));
 
         }catch (Exception e){
